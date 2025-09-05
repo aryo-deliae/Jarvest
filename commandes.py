@@ -3,7 +3,6 @@ import arvestapi
 from pdf2image import convert_from_path
 import os
 import arvestapi
-import discord
 import json
 from PIL import Image
 from urllib.request import urlopen
@@ -31,14 +30,13 @@ def upload_image(mail, password, messoge):
     added_media.update_title(nom_fichier)
 
 
+
 def medias_pdf_to_manifest(medias, nom_manifest, racine, ar):
 
 
             config.configs['helpers.auto_fields.AutoLang'].auto_lang = "en"
             base_url = "http://127.0.0.1:5500"
-
             manifest = Manifest(id=f"{base_url}/diapo_{nom_manifest}.json", label=f"{nom_manifest}")
-
 
             #Décompte des media Arvest a utiliser dans le manifest
 
@@ -56,9 +54,7 @@ def medias_pdf_to_manifest(medias, nom_manifest, racine, ar):
             for l in medias:
                 if l.title == f"{nom_manifest}_page_1.jpeg":
                     image_url = l.get_full_url()
-                        
                     img =Image.open(urlopen(image_url))
-
                     widh_media, height_media = img.size
 
             #Creation des Canvas
