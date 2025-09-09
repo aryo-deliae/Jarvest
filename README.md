@@ -1,6 +1,8 @@
 # Jarvest
 
-Bot connecté au compte Arvest : Jarvest.to.arvest@gmail.com
+Bot connecté au compte Arvest dédié : 
+- MAIL : Jarvest.to.arvest@gmail.com
+- MDP : ,900iBgvfXxCqe6SDje
 
 Lien d'invitation : https://discord.com/oauth2/authorize?client_id=1376509374377234442&permissions=2048&integration_type=0&scope=bot
 
