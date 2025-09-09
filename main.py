@@ -7,6 +7,8 @@ from commandes import upload_image, medias_pdf_to_manifest
 from pdf2image import convert_from_path
 import os
 from dotenv import load_dotenv
+from keep_alive import keep_alive
+
 
 load_dotenv()
 key_bot = os.getenv('BOT_KEY')
