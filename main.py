@@ -6,8 +6,11 @@ import arvestapi
 from commandes import upload_image, medias_pdf_to_manifest
 from pdf2image import convert_from_path
 import os
+from dotenv import load_dotenv
 
-key_bot = "your token"
+load_dotenv()
+key_bot = os.getenv('BOT_KEY')
+
 mail = "your mail"
 password = "your password"
 
