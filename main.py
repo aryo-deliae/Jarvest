@@ -10,8 +10,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 key_bot = os.getenv('BOT_KEY')
-
+load_dotenv()
 mail = os.getenv('MAIL')
+load_dotenv()
 password = os.getenv('PASS')
 
 intents = discord.Intents.all()
