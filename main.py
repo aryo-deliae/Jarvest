@@ -103,6 +103,6 @@ async def on_ready():
    sync = await bot.tree.sync()
    print(f"{len(sync)} commandes syncronisées")    
 
-
+keep_alive()
 if __name__ == '__main__':
     bot.run(token=key_bot)
