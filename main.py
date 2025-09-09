@@ -11,8 +11,8 @@ from dotenv import load_dotenv
 load_dotenv()
 key_bot = os.getenv('BOT_KEY')
 
-mail = "your mail"
-password = "your password"
+mail = os.getenv('MAIL')
+password = os.getenv('PASS')
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
